@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(image/cool-purple.png);
+    background-size: cover;
+}
+
+header {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #A0177C;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px #000;
+}
+
+form div {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    margin: 10px;
+}
+
+form div label input {
+    width: 500px;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid #B869A2;
+}
+
+input:focus {
+    outline: none;
+    height: 45px;
+    border: 2px solid #B869A2;
+    border-radius: 5px;
+}
+
+
+form fieldset {
+   width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #B869A2;
+}
+
+textarea {
+    width: 450px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #B869A2;
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid #B869A2;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #97136B;
+    border: 1px solid #999;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #931E75;
+}

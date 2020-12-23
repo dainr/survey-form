@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Survey Form</h1>
+    </header>
+
+    <form action="#">
+        <div>
+            <label for="firstname">First Name:<br/> 
+                <input type="text" name="first-name" id="firstname" placeholder="first name...">
+            </label>
+            
+            <label for="lastname">Last Name: <br/>
+                <input type="text" name="last-name" id="lastname" placeholder="last name...">
+            </label>
+            
+        </div>
+
+        <div>
+            <label for="email">Email: <br/>
+                <input type="email" name="email" id="email" placeholder="email...">
+            </label>
+            
+            <label for="phone">Phone: <br/>
+                <input type="text" name="phone" id="phone" placeholder="optional...">
+            </label>
+        </div>
+
+        <fieldset>
+            <legend>Choose your favorite movie genre:</legend>
+            
+            <input type="checkbox" name="genre" id="horror">
+            <label for="horror">Horror</label>
+            
+            <input type="checkbox" name="genre" id="action">
+            <label for="action">Action</label>
+
+            <input type="checkbox" name="genre" id="romance">
+            <label for="romance">Romance</label>
+
+            <input type="checkbox" name="genre" id="adventure">
+            <label for="adventure">Adventure</label>
+
+            <input type="checkbox" name="genre" id="suspense">
+            <label for="suspense">Suspense</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your favorite color:</legend>
+            
+            <input type="radio" name="color" id="green">
+            <label for="green">Green</label>
+
+            <input type="radio" name="color" id="yellow">
+            <label for="yellow">Yellow</label>
+
+            <input type="radio" name="color" id="purple">
+            <label for="purple">Purple</label>
+
+            <input type="radio" name="color" id="pink">
+            <label for="pink">Pink</label>
+
+            <input type="radio" name="color" id="blue">
+            <label for="blue">Blue</label>
+
+            <input type="radio" name="color" id="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <label for="comment">Comment:</label>
+        <textarea placeholder="please leave a comment..." id="comment"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
