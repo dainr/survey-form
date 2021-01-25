@@ -7,80 +7,77 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Survey Form</h1>
-    </header>
-
-    <form action="#">
-        <div>
-            <label for="firstname">First Name:<br/> 
-                <input type="text" name="first-name" id="firstname" placeholder="first name...">
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A survey form project part of freecodecamp.org Responsive Web Design Certification</p>
+    <form id="survey-form">
+        <fieldset class="input-control">
+            <label for="name" id="name-label"> Full Name
+                <input type="text" id="name" required placeholder=" enter full name">
             </label>
-            
-            <label for="lastname">Last Name: <br/>
-                <input type="text" name="last-name" id="lastname" placeholder="last name...">
+    
+            <label for="email" id="email-label"> Email
+                <input type="email" id="email" required placeholder="enter email">
             </label>
-            
-        </div>
-
-        <div>
-            <label for="email">Email: <br/>
-                <input type="email" name="email" id="email" placeholder="email...">
+    
+            <label for="number" id="number-label"> Favorite Number
+                <input type="number" id="number" min="1" max="20" required placeholder="choose a number">
             </label>
-            
-            <label for="phone">Phone: <br/>
-                <input type="text" name="phone" id="phone" placeholder="optional...">
-            </label>
-        </div>
-
-        <fieldset>
-            <legend>Choose your favorite movie genre:</legend>
-            
-            <input type="checkbox" name="genre" id="horror">
-            <label for="horror">Horror</label>
-            
-            <input type="checkbox" name="genre" id="action">
-            <label for="action">Action</label>
-
-            <input type="checkbox" name="genre" id="romance">
-            <label for="romance">Romance</label>
-
-            <input type="checkbox" name="genre" id="adventure">
-            <label for="adventure">Adventure</label>
-
-            <input type="checkbox" name="genre" id="suspense">
-            <label for="suspense">Suspense</label>
+    
         </fieldset>
 
-        <fieldset>
-            <legend>What is your favorite color:</legend>
-            
-            <input type="radio" name="color" id="green">
-            <label for="green">Green</label>
+        <div class="dropdown-field">
+            <label for="dropdown">Select an option:</label>
+            <select id="dropdown">
+                <option>Choose</option>
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+            </select>
+        </div>
 
-            <input type="radio" name="color" id="yellow">
-            <label for="yellow">Yellow</label>
-
-            <input type="radio" name="color" id="purple">
-            <label for="purple">Purple</label>
-
-            <input type="radio" name="color" id="pink">
-            <label for="pink">Pink</label>
-
-            <input type="radio" name="color" id="blue">
-            <label for="blue">Blue</label>
-
-            <input type="radio" name="color" id="other">
-            <label for="other">Other</label>
+        <fieldset class="radio-control">
+            <legend>Which fruit you rather eat:</legend>
+            <label for="banana">
+                <input type="radio" name="fruit" id="banana" value="banana"> Banana
+            </label>
+            <label for="apple">
+                <input type="radio" name="fruit" id="apple" value="apple"> Apple
+            </label>
+            <label for="pear">
+                <input type="radio" name="fruit" id="pear" value="pear"> Pear
+            </label>
+            <label for="cherry">
+                <input type="radio" name="fruit" id="cherry" value="cherry"> Cherry
+            </label>
         </fieldset>
+        
+        <fieldset class="check-control">
+            <legend>Which best or closely describe your personality:</legend>
+            <label for="outgoing">
+                <input type="checkbox" name="personality" id="outgoing" value="outgoing"> Outgoing
+            </label>
+            <label>
+                <input type="checkbox" name="personality" id="calm" value="calm"> Calm
+            </label>
+            <label>
+                <input type="checkbox" name="personality" id="adventurous" value="adventurous"> Adeventurous
+            </label>
+            <label>
+                <input type="checkbox" name="personality" id="deep" value="deep"> Deep
+            </label>
+        </fieldset>
+        
+        <div class="additional-comment">
+            <label for="additional">Additional comments if any:</label>
+            <textarea id="additional" placeholder="additional comment"></textarea>
+        </div>
 
-        <label for="comment">Comment:</label>
-        <textarea placeholder="please leave a comment..." id="comment"></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
+       
     </form>
 
-    <footer>
-
-    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
